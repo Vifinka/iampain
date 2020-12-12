@@ -1,0 +1,29 @@
+nav{
+    background-color:#333;
+    padding:10px;
+}
+
+nav a {
+    color:white;
+    padding-right:20px;
+    text-decoration: none;
+}
+
+body{
+    margin:0px;
+}
+
+.background{
+    margin:15px;
+    overflow:hidden;
+}
+
+.half{
+    width:50%;
+    float:left;
+}
+
+i{
+    text-align:center;
+    font-size:450px;
+}

@@ -1,0 +1,34 @@
+<html>
+<%- include('./partials/head.ejs') %>
+
+<body>
+
+    <% const name = 'Viky' %>
+
+<%- include('./partials/nav.ejs') %>
+
+<h1><%= name %></h1>
+<h1>hahahahaha</h1>
+<h2>I am unstoppable</h2>
+<p>hi hello i have gained the power of gods</p>
+<h2>why im gae</h2>
+<p>being gae is kinda awesome ngl u should try it ^___^</p>
+
+<div class="main content">
+    <h1>Newest info</h1>
+
+    <% if (blogs.length > 0) {%>
+        <%  blogs.forEach(blog => { %>
+            <h3 class="title"><%= blog.title%></h3>
+            <p class="snippet"><%= blog.snippet%></p>
+       <% })%>
+    <% } else{%>
+        <p>No Blogs to display</p>
+    <%}%>
+</div>
+
+</body>
+
+<%- include('./partials/footer.ejs') %>
+
+</html>
